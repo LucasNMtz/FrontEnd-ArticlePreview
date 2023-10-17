@@ -1,0 +1,237 @@
+*
+{
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+    color: hsl(217, 19%, 35%);
+}
+
+body
+{
+    background-color: hsl(210, 46%, 95%);
+    min-height: 100vh;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+}
+
+main
+{
+    background-color: hsl(0, 0%, 100%);
+    width: 1030px;
+    height: 370px;
+    display: flex;
+    position: relative;
+    min-width: 404px;
+
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+
+    -webkit-box-shadow: 10px 10px 27px -4px rgba(0,0,0,0.19);
+    -moz-box-shadow: 10px 10px 27px -4px rgba(0,0,0,0.19);
+    box-shadow: 10px 10px 27px -4px rgba(0,0,0,0.19);
+}
+
+.main-p
+{
+    color: hsl(214, 17%, 51%);
+}
+
+.main-p, span, .footer__author-info div p
+{
+    font-size: 1.2em;
+}
+
+.footer__author-info div p
+{
+    font-weight: 700;
+}
+
+.main__picture
+{
+    width: 40%;
+    object-fit: cover;
+    object-position: left;
+
+    border-radius: 15px 0px 0px 15px;
+    -moz-border-radius: 15px 0px 0px 15px;
+    -webkit-border-radius: 15px 0px 0px 15px;
+}
+
+h1
+{
+    line-height: 1.2;
+}
+
+.main-p
+{
+    line-height: 1.5;
+}
+
+article
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 45px 50px;
+    width: 60%;
+}
+
+h1
+{
+    margin: 0;
+    font-size: 2.5em;
+}
+
+article footer
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__author-info div
+{
+    margin-left: 20px;
+    display: grid;
+    gap: 6px;
+}
+
+[alt="Appleton's avatar photo"]
+{
+    border-radius: 100%;
+    height: 55px;
+}
+
+span
+{
+    color: hsla(214, 17%, 51%, 0.664);
+}
+
+.div__share-icon
+{
+    align-self: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+
+[alt="Share icon"]
+{
+    width: 18px;
+    height: 18px;
+}
+
+.footer__author-info
+{
+    display: flex;
+    align-items: center;
+}
+
+.div__share-icon
+{
+    background-color: hsla(212, 23%, 69%, 0.274);
+}
+
+.share-menu
+{
+    background-color: hsl(217, 19%, 35%);
+    width: 300px;
+    height: 60px;
+    position: absolute;
+    top: 185px;
+    left: 804px;
+    border-radius: 10px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+
+    -webkit-box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 26px -3px rgba(0,0,0,0.23);
+}
+
+.share-menu-decoration
+{
+    background-color: inherit;
+    width: 40px;
+    height: 20px;
+    position: absolute;
+    left: 45%;
+    top: 100%;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.share-menu p
+{
+    color: hsla(212, 23%, 69%, 0.719);
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.icons
+{
+    width: 25px;
+    height: 25px;
+}
+
+.share-menu__share-icon
+{
+    background-color: hsl(212, 23%, 69%);
+}
+
+@media only screen and (max-width: 1200px)
+{
+    main
+    {
+        width: 693px;
+        height: 95%;
+        flex-direction: column;
+    }
+
+    .main__picture
+    {
+        width: 100%;
+        height: 40%;
+
+        border-radius: 15px 15px 0px 0px;
+        -moz-border-radius: 15px 15px 0px 0px;
+        -webkit-border-radius: 15px 15px 0px 0px;
+    }
+
+    article
+    {
+        width: 100%;
+        height: 60%;
+    }
+
+    .share-menu-decoration
+    {
+        display: none;
+    }
+    
+    .share-menu
+    {
+        width: 100%;
+        height: 100px;
+        top: 88.1%;
+        left: 0;
+        padding: 10px 50px;
+        gap: 35px;
+        justify-content: space-around;
+        border-radius: 0px 0px 15px 15px;
+        -moz-border-radius: 0px 0px 15px 15px;
+        -webkit-border-radius: 0px 0px 15px 15px;
+    }
+}
+
+@media only screen and (max-width: 750px)
+{
+    main
+    {
+        width: 100%;
+        height: 100%;
+    }
+}
